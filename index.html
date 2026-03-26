@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Health Insurance Risk Calculator</title>
+
+</head>
+<body>
+    <h1>Health Insurance Risk Calculator</h1>
+
+    <!-- The action URL should match your server-side route -->
+    <form action="/risk-calculation" method="POST">
+        <label>Name:</label>
+        <input type="text" id="name" class="input-box">
+        <br>
+
+        <label>Age:</label>
+        <input type="number" id="age" class="input-box">
+        <br>
+
+        <label>BMI:</label>
+        <select id="bmi" class="input-box">
+            <option value="normal">Normal</option>
+            <option value="overweight">Overweight</option>
+            <option value="obese">Obese</option>
+        </select>
+        <br>
+
+        <label>Blood Pressure:</label>
+        <select id="bp" class="input-box">
+            <option value="normal">Normal</option>
+            <option value="elevated">Elevated</option>
+            <option value="stage 1">Stage 1</option>
+            <option value="stage 2">Stage 2</option>
+            option value="crisis">Crisis</option>
+        </select>
+        <br>
+
+        <label>Family Disease:</label>
+        <select id="fd" class="input-box">
+            <option value="none">None</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="cancer">Cancer</option>
+            <option value="alzheimer's">Alzheimer's</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
